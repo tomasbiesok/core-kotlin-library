@@ -2,24 +2,62 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/vInput"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type number or text" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/vButtonTest"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/vInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type number or text" />
+
+        <Button
+            android:id="@+id/vButtonNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Show number" />
+
+        <TextView
+            android:id="@+id/vLabelNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Label"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="test" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/vLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/vButtonStartCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start" />
+
+        <TextView
+            android:id="@+id/vLabelCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Label"/>
+
+        <Button
+            android:id="@+id/vButtonStopCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop" />
+
+    </LinearLayout>
 
 </LinearLayout>
