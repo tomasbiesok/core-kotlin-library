@@ -40,7 +40,7 @@ dependencies {
     def lifecycle_version = "2.2.0"
     def fragment_ktx_version = "1.2.5"
 
-    implementation(project(":core"))
+    implementation 'cz.wiechocz.libraries:core-kotlin-library:0.1.1'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_version"

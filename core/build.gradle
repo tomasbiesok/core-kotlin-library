@@ -1,6 +1,17 @@
 plugins {
     id 'java-library'
     id 'kotlin'
+    id 'com.novoda.bintray-release'
+}
+
+publish {
+    userOrg = 'wiechocz'
+    repoName = 'libraries'
+    groupId = 'cz.wiechocz.libraries'
+    artifactId = 'core-kotlin-library'
+    publishVersion = '0.1.0'
+    desc = 'First test'
+    website = 'https://bintray.com/wiechocz/libraries/core-kotlin-library'
 }
 
 java {
